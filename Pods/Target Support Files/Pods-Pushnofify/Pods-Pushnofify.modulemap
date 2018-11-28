@@ -1,0 +1,6 @@
+framework module Pods_Pushnofify {
+  umbrella header "Pods-Pushnofify-umbrella.h"
+
+  export *
+  module * { export * }
+}

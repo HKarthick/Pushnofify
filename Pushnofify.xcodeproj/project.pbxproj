@@ -12,9 +12,12 @@
 		9EADADFC21AE5EE400872A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EADADFA21AE5EE400872A9C /* Main.storyboard */; };
 		9EADADFE21AE5EE600872A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EADADFD21AE5EE600872A9C /* Assets.xcassets */; };
 		9EADAE0121AE5EE600872A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EADADFF21AE5EE600872A9C /* LaunchScreen.storyboard */; };
+		9ED2D19D21AE70F3004FFB97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2D19C21AE70F3004FFB97 /* GoogleService-Info.plist */; };
+		E68C580DD4269D4AC846688B /* Pods_Pushnofify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC00ABF91E1B2C9A845F5733 /* Pods_Pushnofify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B06E49F50C4E1A1B533D399 /* Pods-Pushnofify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pushnofify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pushnofify/Pods-Pushnofify.release.xcconfig"; sourceTree = "<group>"; };
 		9EADADF321AE5EE400872A9C /* Pushnofify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pushnofify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EADADF621AE5EE400872A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EADADF821AE5EE400872A9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,10 @@
 		9EADADFD21AE5EE600872A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EADAE0021AE5EE600872A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EADAE0221AE5EE600872A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ED2D19B21AE6B7E004FFB97 /* Pushnofify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pushnofify.entitlements; sourceTree = "<group>"; };
+		9ED2D19C21AE70F3004FFB97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC00ABF91E1B2C9A845F5733 /* Pods_Pushnofify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pushnofify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5386801450BE539A476892 /* Pods-Pushnofify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pushnofify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pushnofify/Pods-Pushnofify.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68C580DD4269D4AC846688B /* Pods_Pushnofify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A731AA55DFBF8EBA4662409 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC00ABF91E1B2C9A845F5733 /* Pods_Pushnofify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9EADADEA21AE5EE400872A9C = {
 			isa = PBXGroup;
 			children = (
 				9EADADF521AE5EE400872A9C /* Pushnofify */,
 				9EADADF421AE5EE400872A9C /* Products */,
+				F91F736D33DEEDF16D314EF0 /* Pods */,
+				9A731AA55DFBF8EBA4662409 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,8 @@
 		9EADADF521AE5EE400872A9C /* Pushnofify */ = {
 			isa = PBXGroup;
 			children = (
+				9ED2D19B21AE6B7E004FFB97 /* Pushnofify.entitlements */,
+				9ED2D19C21AE70F3004FFB97 /* GoogleService-Info.plist */,
 				9EADADF621AE5EE400872A9C /* AppDelegate.swift */,
 				9EADADF821AE5EE400872A9C /* ViewController.swift */,
 				9EADADFA21AE5EE400872A9C /* Main.storyboard */,
@@ -64,6 +84,15 @@
 			path = Pushnofify;
 			sourceTree = "<group>";
 		};
+		F91F736D33DEEDF16D314EF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF5386801450BE539A476892 /* Pods-Pushnofify.debug.xcconfig */,
+				5B06E49F50C4E1A1B533D399 /* Pods-Pushnofify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EADAE0521AE5EE600872A9C /* Build configuration list for PBXNativeTarget "Pushnofify" */;
 			buildPhases = (
+				E7CA89B64965B90965BAF734 /* [CP] Check Pods Manifest.lock */,
 				9EADADEF21AE5EE400872A9C /* Sources */,
 				9EADADF021AE5EE400872A9C /* Frameworks */,
 				9EADADF121AE5EE400872A9C /* Resources */,
+				283EB703E7CBF09FF7D62EBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +127,11 @@
 				TargetAttributes = {
 					9EADADF221AE5EE400872A9C = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,12 +159,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EADAE0121AE5EE600872A9C /* LaunchScreen.storyboard in Resources */,
+				9ED2D19D21AE70F3004FFB97 /* GoogleService-Info.plist in Resources */,
 				9EADADFE21AE5EE600872A9C /* Assets.xcassets in Resources */,
 				9EADADFC21AE5EE400872A9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		283EB703E7CBF09FF7D62EBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pushnofify/Pods-Pushnofify-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pushnofify/Pods-Pushnofify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7CA89B64965B90965BAF734 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pushnofify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9EADADEF21AE5EE400872A9C /* Sources */ = {
@@ -280,11 +360,14 @@
 		};
 		9EADAE0621AE5EE600872A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5386801450BE539A476892 /* Pods-Pushnofify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pushnofify/Pushnofify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2C4R2VE3A;
 				INFOPLIST_FILE = Pushnofify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +381,14 @@
 		};
 		9EADAE0721AE5EE600872A9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B06E49F50C4E1A1B533D399 /* Pods-Pushnofify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pushnofify/Pushnofify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2C4R2VE3A;
 				INFOPLIST_FILE = Pushnofify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
